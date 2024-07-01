@@ -15,3 +15,21 @@ for (int i = 0; i < n; i++)
             slarge=arr[i];
         }
     }
+// ////////////////////////////////////////////
+// above approach uses 2 for loop 
+// now we will do it with another approach
+
+int largest=arr[0];
+int slarge= -1;
+
+for (int i = 0; i < n; i++)
+    {
+        if(arr[i]>largest){
+            slarge=large;
+            largest=arr[i];
+        }
+        else if(arr[i]>slarge && arr[i] < largest){
+            slarge=arr[i];
+        }
+    }
+
