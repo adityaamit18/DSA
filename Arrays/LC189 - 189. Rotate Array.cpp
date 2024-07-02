@@ -14,5 +14,10 @@ public:
         for (int i = 0; i < k; i++) {
             nums[i] = temp[i];
         }
+
+        // For making it without TEMP
+        // reverse(nums.begin(),nums.begin()+n);
+        // reverse(nums.begin()+k,nums.begin()+n);
+        // reverse(nums.begin(),nums.begin()+k);
     }
 };
