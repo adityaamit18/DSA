@@ -32,6 +32,20 @@ void leftRot(int arr[],int n,int d){
     
 }
 
+void leftRotwithoutTEMP(int arr[],int n,int d){
+
+    //step 1 find the actual rotation
+    d=d%n;
+
+    //step 2 reverse first k terms
+    reverse(arr,arr+d);
+    // reverse the other remaining elements
+    reverse(arr+d,arr+n);
+    //reverse whole once again
+    reverse(arr,arr+n);
+
+}
+
 int main(){
 
     int n;
