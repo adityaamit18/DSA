@@ -22,3 +22,28 @@ public:
     }
 };
 -------------------
+class Solution {
+public:
+    void moveZeroes(vector<int>& arr) {
+        int j=-1; //pointer that willl point at zeroes
+        int n=arr.size();
+//finding the first zero value and keeping it index at j
+        for(int i=0;i<n;i++){
+            if(arr[i]==0){
+                j=i;
+                break;
+            }
+        }
+        if(j == -1) return; //if j remains -1 that means there is no zero value in entire array
+
+//now find the non zero term right after the zero and swap it and then increase the j value
+        for(int i=j+1;i<n;i++){
+            if(arr[i]!=0){
+                swap(arr[i],arr[j]);
+                j++;
+            }
+        }
+        return;
+        
+    }
+};
