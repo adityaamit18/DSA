@@ -22,6 +22,8 @@ public:
     }
 };
 -------------------
+
+//optimal
 class Solution {
 public:
     void moveZeroes(vector<int>& arr) {
