@@ -1,3 +1,4 @@
+//for sorted arrays
 //{ Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
