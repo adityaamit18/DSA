@@ -1,0 +1,17 @@
+class Solution {
+public:
+    int minOperations(vector<string>& logs) {
+        int cnt=0;
+        for(auto s:logs){
+            if(s!="../" && s!="./") {
+                cnt++;
+            }
+
+            if(s=="../"){
+                cnt=max(0,cnt-1); // we cannot write c-- as if ../ are too many then our cnt can go -ve
+            }
+        }
+        return cnt;
+
+    }
+};
